@@ -118,6 +118,26 @@
       font-size: 1rem;
     }
 
+    .imagen-seccion {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .imagen-seccion img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .imagen-seccion img:hover {
+      transform: scale(1.05);
+    }
+
     .legal {
       margin-top: 60px;
       font-size: 0.9rem;
@@ -142,10 +162,8 @@
     .legal p {
       margin: 0 0 15px 0;
       padding: 0;
+      width: 100%;
       display: block;
-      max-width: none;
-      margin-left: 0;
-      margin-right: 0;
     }
 
     .legal strong {
@@ -156,6 +174,11 @@
       .secciones {
         flex-direction: column;
         align-items: center;
+      }
+
+      .imagen-seccion {
+        flex-direction: column;
+        gap: 20px;
       }
 
       .legal {
@@ -204,6 +227,13 @@
         <strong>20 castigos</strong> que calientan motores antes de la fiesta grande.
       </div>
     </div>
+  </div>
+
+  <!-- NUEVA SECCIÓN DE IMÁGENES -->
+  <div class="imagen-seccion">
+    <img src="Resiste.png" alt="Resiste" />
+    <img src="MalaCopa.png" alt="MalaCopa" />
+    <img src="Precopeo.png" alt="Precopeo" />
   </div>
 
   <section class="legal">
